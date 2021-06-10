@@ -10,6 +10,7 @@ body {
 
 header {
   min-width: 300px;
+  color: #fff;
 }
 
 header .fiverrNavbar {
@@ -71,6 +72,13 @@ header .fiverrNavbar .fiverrNavbar__right .navbar-nav .nav-link:hover {
   color: #1dbf73;
 }
 
+.sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background-color: #fff;
+}
+
 @media only screen and (min-width: 1160px) {
   header .fiverrNavbar {
     max-width: 1400px;
@@ -116,26 +124,80 @@ header .fiverrNavbar .fiverrNavbar__right .navbar-nav .nav-link:hover {
   background-image: url(../../img/rikita.jfif);
   height: 800px;
   background-repeat: no-repeat;
-  position: relative;
+  background-size: contain;
 }
 
 .carousel .carousel__content {
   max-width: 650px;
   padding-bottom: 32px;
+  transform: translate(-57%, 90%);
+  color: #fff;
 }
 
-.carousel .carousel__content .fiverrNavbar__form-search {
+.carousel .carousel__content .carousel__header h1 {
+  font-family: "Macan", "Neue", Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  padding-bottom: 24px;
+}
+
+.carousel .carousel__content .carousel__header span {
+  font-weight: 700;
+}
+
+.carousel .carousel__content .carousel__header i {
+  font-weight: 500;
+}
+
+.carousel .carousel__content .carousel__header .fiverrNavbar__form-search {
   position: relative;
 }
 
-.carousel .carousel__content .fiverrNavbar__form-search .input-group .input-group-search {
+.carousel .carousel__content .carousel__header .fiverrNavbar__form-search .input-group .input-group-search {
   position: absolute;
   z-index: 5;
   top: 8px;
   left: 16px;
 }
 
-.carousel .carousel__content .fiverrNavbar__form-search .input-group input[type="search"] {
+.carousel .carousel__content .carousel__header .fiverrNavbar__form-search .input-group input[type="search"] {
+  padding: 20px;
+  border-radius: 4px 0 0 4px;
   padding-left: 44px;
+}
+
+.carousel .carousel__content .popular {
+  display: flex;
+  padding-top: 24px;
+}
+
+.carousel .carousel__content .popular ul {
+  display: flex;
+  width: 100%;
+  margin-left: 12px;
+  list-style: none;
+}
+
+.carousel .carousel__content .popular ul li {
+  margin-right: 12px;
+  white-space: nowrap;
+}
+
+.carousel .carousel__content .popular ul li a {
+  text-decoration: none;
+  border-radius: 40px;
+  line-height: 24px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 3px 12px;
+  cursor: pointer;
+}
+
+.carousel .carousel__content .popular ul li a:hover {
+  color: #404040;
+  background-color: #fff;
+  border: 1px solid #fff;
 }
 /*# sourceMappingURL=main.css.map */

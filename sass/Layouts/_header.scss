@@ -1,6 +1,6 @@
 header {
   min-width: 300px;
-
+  color: $color-white-0;
   .fiverrNavbar {
     height: 80px;
     transition: 0.5s all;
@@ -52,6 +52,13 @@ header {
       }
     }
   }
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background-color: #fff;
 }
 
 @media only screen and (min-width: 1160px) {
