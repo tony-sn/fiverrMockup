@@ -1,0 +1,64 @@
+header {
+  min-width: 300px;
+
+  .fiverrNavbar {
+    height: 80px;
+    transition: 0.5s all;
+    .fiverrNavbar__left {
+      display: flex;
+      align-items: center;
+      .header-logo {
+        width: auto;
+        height: auto;
+        min-width: 121px;
+        margin: 0;
+        padding-left: 0;
+        .header-logo img {
+          position: relative;
+          margin: 3px 0 0;
+          top: auto;
+          left: auto;
+        }
+      }
+
+      .fiverrNavbar__form-search {
+        position: relative;
+        .input-group {
+          .input-group-search {
+            @include searchIconPosition(absolute, 5, 8px, 8px);
+          }
+          input[type="search"] {
+            width: 272px;
+            font-size: $fs-0;
+            padding: $pd-4 + 2 $pd-4 $pd-4 $pd-0 + 4;
+            border-color: $color-gray-3;
+            border-radius: $br-0 0 0 $br-0;
+            &:focus {
+              border-color: $color-gray-4;
+              box-shadow: none;
+            }
+          }
+        }
+      }
+    }
+    .fiverrNavbar__right {
+      font-weight: $fw-1;
+      margin: auto 0 auto auto;
+      padding: 0 $pd-4 + 3;
+      .navbar-nav {
+        .nav-link:hover {
+          color: $color-green-0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1160px) {
+  header {
+    .fiverrNavbar {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+  }
+}

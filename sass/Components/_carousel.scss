@@ -1,0 +1,21 @@
+.carousel {
+  background-image: url(../../img/rikita.jfif);
+  height: 800px;
+  background-repeat: no-repeat;
+  position: relative;
+  .carousel__content {
+    max-width: 650px;
+    padding-bottom: 32px;
+    .fiverrNavbar__form-search {
+      position: relative;
+      .input-group {
+        .input-group-search {
+          @include searchIconPosition(absolute, 5, 8px, 16px);
+        }
+        input[type="search"] {
+          padding-left: 44px;
+        }
+      }
+    }
+  }
+}

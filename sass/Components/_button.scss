@@ -1,0 +1,15 @@
+.btn--green {
+  @include styleButton($color-white-0, $color-green-0, transparent, $fs-2, $fw-2, $pd-4, $pd-5);
+  &:hover {
+    @include hoverButton($color-white-0, $color-green-1, transparent);
+  }
+  border-radius: 0 3px 3px 0;
+}
+
+.btn--white {
+  @include styleButton($color-green-0, $color-white-0, $color-green-0, $fs-2, $fw-2, $pd-4, $pd-5 + 4);
+  &:hover {
+    @include hoverButton($color-white-0, $color-green-0, $color-green-0);
+  }
+  border-radius: $br-0;
+}

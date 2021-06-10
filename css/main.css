@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+header {
+  min-width: 300px;
+}
+
+header .fiverrNavbar {
+  height: 80px;
+  transition: 0.5s all;
+}
+
+header .fiverrNavbar .fiverrNavbar__left {
+  display: flex;
+  align-items: center;
+}
+
+header .fiverrNavbar .fiverrNavbar__left .header-logo {
+  width: auto;
+  height: auto;
+  min-width: 121px;
+  margin: 0;
+  padding-left: 0;
+}
+
+header .fiverrNavbar .fiverrNavbar__left .header-logo .header-logo img {
+  position: relative;
+  margin: 3px 0 0;
+  top: auto;
+  left: auto;
+}
+
+header .fiverrNavbar .fiverrNavbar__left .fiverrNavbar__form-search {
+  position: relative;
+}
+
+header .fiverrNavbar .fiverrNavbar__left .fiverrNavbar__form-search .input-group .input-group-search {
+  position: absolute;
+  z-index: 5;
+  top: 8px;
+  left: 8px;
+}
+
+header .fiverrNavbar .fiverrNavbar__left .fiverrNavbar__form-search .input-group input[type="search"] {
+  width: 272px;
+  font-size: 16px;
+  padding: 9px 7px 7px 28px;
+  border-color: #ddd;
+  border-radius: 3px 0 0 3px;
+}
+
+header .fiverrNavbar .fiverrNavbar__left .fiverrNavbar__form-search .input-group input[type="search"]:focus {
+  border-color: #999;
+  box-shadow: none;
+}
+
+header .fiverrNavbar .fiverrNavbar__right {
+  font-weight: 600;
+  margin: auto 0 auto auto;
+  padding: 0 10px;
+}
+
+header .fiverrNavbar .fiverrNavbar__right .navbar-nav .nav-link:hover {
+  color: #1dbf73;
+}
+
+@media only screen and (min-width: 1160px) {
+  header .fiverrNavbar {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+.btn--green {
+  color: #fff;
+  background-color: #1dbf73;
+  border: 1px solid transparent;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 7px 16px;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+}
+
+.btn--green:hover {
+  color: #fff;
+  background-color: #19a463;
+  border: 1px solid transparent;
+}
+
+.btn--white {
+  color: #1dbf73;
+  background-color: #fff;
+  border: 1px solid #1dbf73;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 7px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn--white:hover {
+  color: #fff;
+  background-color: #1dbf73;
+  border: 1px solid #1dbf73;
+}
+
+.carousel {
+  background-image: url(../../img/rikita.jfif);
+  height: 800px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.carousel .carousel__content {
+  max-width: 650px;
+  padding-bottom: 32px;
+}
+
+.carousel .carousel__content .fiverrNavbar__form-search {
+  position: relative;
+}
+
+.carousel .carousel__content .fiverrNavbar__form-search .input-group .input-group-search {
+  position: absolute;
+  z-index: 5;
+  top: 8px;
+  left: 16px;
+}
+
+.carousel .carousel__content .fiverrNavbar__form-search .input-group input[type="search"] {
+  padding-left: 44px;
+}
+/*# sourceMappingURL=main.css.map */
