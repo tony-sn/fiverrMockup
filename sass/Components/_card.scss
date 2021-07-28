@@ -1,0 +1,14 @@
+.card {
+  margin: $mg-0 - 2 $mg-0 - 2 $mg-0 - 2 0;
+  cursor: pointer;
+  .card-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $color-white-0;
+    h4 {
+      font-size: $fs-1 + 2;
+      line-height: 140%;
+    }
+  }
+}

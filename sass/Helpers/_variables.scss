@@ -8,12 +8,15 @@ $color-gray-5: #404040;
 
 $color-green-0: #1dbf73;
 $color-green-1: #19a463;
+$color-green-2: #f1fdf7;
 
 $color-white-0: #fff;
 
 $bd-color-0: #dadbdd;
 $bd-color-1: #b5b6ba;
 $bd-color-2: #e4e5e7;
+
+$color-arr: rgb(85, 85, 85);
 
 //*font
 $fs-0: 16px;
@@ -45,3 +48,13 @@ $pd-5: 16px;
 
 //* border radius
 $br-0: 3px;
+
+//* breakpoints
+$breakpoints: (
+  "screen-1": 1760px,
+  "screen-2": 1400px,
+  "extra-large": 1200px,
+  "large": 992px,
+  "medium": 768px,
+  "small": 576px,
+);

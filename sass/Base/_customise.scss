@@ -1,0 +1,32 @@
+.owl-carousel {
+  button:focus {
+    outline: none;
+  }
+  .owl-nav {
+    button {
+      &.owl-prev,
+      &.owl-next {
+        color: $color-arr;
+        background-color: $color-white-0;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        border-radius: 50%;
+        box-shadow: 0 2px 8px 2px $color-gray-1;
+        font-size: $fs-5 + 1;
+        position: absolute;
+        top: 40%;
+        &:hover {
+          background-color: $color-white-0;
+          color: $color-arr;
+        }
+      }
+      &.owl-prev {
+        left: -25px;
+      }
+      &.owl-next {
+        right: -25px;
+      }
+    }
+  }
+}

@@ -20,3 +20,24 @@
   top: $top-index;
   left: $left-index;
 }
+
+@mixin styleText($color, $fs, $line-height, $pd-y, $pd-x) {
+  color: $color;
+  font-size: $fs;
+  line-height: $line-height;
+  padding: $pd-y $pd-x;
+}
+
+@mixin responsive($screen) {
+  @if map-has-key($map: $breakpoints, $key: $screen) {
+    $value: map-get(
+      $map: $breakpoints,
+      $key: $screen,
+    );
+    @media screen and (min-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn "`{$screen}` isn't exist in breakpoints";
+  }
+}

@@ -52,6 +52,24 @@ header {
       }
     }
   }
+  .categoriesMenu {
+    width: 70%;
+    margin: 0 auto;
+    &::before {
+      content: "";
+      display: block;
+      border-top: 1px solid $color-gray-2;
+      width: 100%;
+    }
+
+    nav {
+      padding-left: 0;
+      padding-bottom: 0;
+    }
+    ul li a {
+      @include styleText($color-gray-0, $fs-0, 24px, $pd-4 + 1, 0);
+    }
+  }
 }
 
 .sticky {

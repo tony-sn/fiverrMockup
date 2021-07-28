@@ -9,10 +9,14 @@
 //Layouts
 @import "./Layouts/header";
 @import "./Layouts/footer";
+@import "./Layouts/partner";
+@import "./Layouts/services";
+@import "./Layouts/selling";
+@import "./Layouts/categories";
+@import "./Layouts/business";
 
 //Components
 @import "./Components/button";
 @import "./Components/carousel";
 @import "./Components/card";
-
-
+@import "./Components/navbar";

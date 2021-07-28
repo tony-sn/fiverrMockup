@@ -48,7 +48,6 @@
               <img src="./img/fiverrLogoBlk.svg">
             </a>
 
-
             <form class="fiverrNavbar__form-search" action="">
               <div class="input-group">
                 <div class="input-group-search">
@@ -57,7 +56,6 @@
                 <input type="search" class="form-control" placeholder="Find Services">
                 <button class="btn--green">Search</button>
               </div>
-
             </form>
 
           </div>
@@ -141,60 +139,313 @@
         </div>
 
       </nav>
+      <div class="categoriesMenu">
+        <nav class="navbar navbar-expand-md navbar-light myNavbar">
+          <ul class="justify-content-between">
+            <li><a href="#">Graphic & Design</a></li>
+            <li><a href="#">Digital Marketing</a></li>
+            <li><a href="#">Writing & Translation</a></li>
+            <li><a href="#">Video & Animation</a></li>
+            <li><a href="#">Music & Audio</a></li>
+            <li><a href="#">Programming & Tech</a></li>
+            <li><a href="#">Data</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Lifestyle</a></li>
+          </ul>
+
+        </nav>
+
+      </div>
     </div>
+
   </header>
 
   <!-- CAROUSEL -->
   <section class="carousel">
-    <div class="carousel__content container">
-      <div class="carousel__header">
-        <h1><span>Find the perfect <i>freelance</i> services for your business</span></h1>
-        <form class="fiverrNavbar__form-search" action="">
-          <div class="input-group">
-            <div class="input-group-search">
-              <img src="./img/search.svg" alt="search logo">
+    <div id="carousel__content" class="carousel carousel-fade" data-ride="carousel" data-interval="2000">
+      <div class="carousel-inner">
+        <!-- extra-class: embed-responsive embed-responsive-16by9 -->
+        <div class="carousel__header container">
+          <div class="header">
+            <h1><span>Find the perfect <i>freelance</i> services for your business</span></h1>
+            <form class="fiverrNavbar__form-search" action="">
+              <div class="input-group">
+                <div class="input-group-search">
+                  <img src="./img/search.svg" alt="search logo">
+                </div>
+                <input type="search" class="form-control" placeholder='Try "building app" mobile'>
+                <button class="btn--green">Search</button>
+              </div>
+            </form>
+            <div class="popular myNavbar">
+              Popular:
+              <ul>
+                <li><a href="#">Website Design</a></li>
+                <li><a href="#">Wordpress</a></li>
+                <li><a href="#">Logo Design</a></li>
+                <li><a href="#">Dropshipping</a></li>
+              </ul>
             </div>
-            <input type="search" class="form-control" placeholder='Try "building app" mobile'>
-            <button class="btn--green">Search</button>
           </div>
-        </form>
+        </div>
+        <div class="carousel-item embed-responsive-item active">
+          <img class="d-block w-100" src="./img/rikita.jfif" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <p>Rikita, <b>Shoemaker and Designer</b></p>
+          </div>
+        </div>
+        <div class="carousel-item embed-responsive-item">
+          <img class="d-block w-100" src="./img/andrea.jfif" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+            <p>Andrea, <b>Fashion Designer</b></p>
+          </div>
+        </div>
+        <div class="carousel-item embed-responsive-item">
+          <img class="d-block w-100" src="./img/zach.jfif" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <p>Zach, <b>Bar Owner</b></p>
+          </div>
+        </div>
+        <div class="carousel-item embed-responsive-item">
+          <img class="d-block w-100" src="./img/moon.jfif" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <p>Moon, <b>Marketing Expert</b></p>
+          </div>
+        </div>
+        <div class="carousel-item embed-responsive-item">
+          <img class="d-block w-100" src="./img/gabriella.jfif" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <p>Gabriella, <b>Video Editor</b></p>
+          </div>
+        </div>
       </div>
-      <div class="popular">
-        Popular:
-        <ul>
-          <li><a href="#">Website Design</a></li>
-          <li><a href="#">Wordpress</a></li>
-          <li><a href="#">Logo Design</a></li>
-          <li><a href="#">Dropshipping</a></li>
-        </ul>
-      </div>
+    </div>
+  </section>
 
+  <!-- PARTNERS -->
+  <section class="partners">
+    <div class="partners__content myNavbar container">
+      <span class="partners__content--text">Trusted by:</span>
+      <ul>
+        <li>
+          <img src="./img/facebook.png">
+        </li>
+        <li>
+          <img src="./img/google.png">
+        </li>
+        <li>
+          <img src="./img/netflix.png">
+        </li>
+        <li>
+          <img src="./img/pandg.png">
+        </li>
+        <li>
+          <img src="./img/paypal.png">
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services">
+    <div class="services__content">
+      <div>
+        <h2>Popular professional services</h2>
+      </div>
+      <div class="owl-carousel owl-theme services__carousel">
+        <div class="card">
+          <img src="./img/logo-design.jfif" class="card-img-top" alt="logo-design">
+          <div class="card-body">
+            <h6 class="card-text">Build your brand</h6>
+            <h4 class="card-title">Logo Design</h4>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/wordpress.jfif" class="card-img-top" alt="wordpress">
+          <div class="card-body">
+            <h6 class="card-text">Customise your site</h6>
+            <h4 class="card-title">Wordpress</h4>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/voiceover.jfif" class="card-img-top" alt="voiceover">
+          <div class="card-body">
+            <h6 class="card-text">Share your message</h6>
+            <h4 class="card-title">Voice Over</h4>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/camera.jfif" class="card-img-top" alt="camera">
+          <div class="card-body">
+            <h6 class="card-text">Engage your audience</h6>
+            <h4 class="card-title">Video Explainer</h4>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/social.jfif" class="card-img-top" alt="social">
+          <div class="card-body">
+            <h6 class="card-text">Reach more customers</h6>
+            <h4 class="card-title">Social Media</h4>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/seo.jfif" class="card-img-top" alt="seo">
+          <div class="card-body">
+            <h6 class="card-text">Unlock growth online</h6>
+            <h4 class="card-title">SEO</h4>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/illustration.jfif" class="card-img-top" alt="illustration">
+          <div class="card-body">
+            <h6 class="card-text">Color your dreams</h6>
+            <h4 class="card-title">Illustration</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELLING POINT -->
+  <section class="selling-point">
+    <div class="selling-point__content">
+      <div class="row">
+        <div class="col-xs-12 col-md-6 selling-point--left">
+          <h2>A whole world of freelance talent at your fingertips</h2>
+          <ul>
+            <li>
+              <h6><i class="far fa-check-circle"></i>
+                The best for every budget
+              </h6>
+              <p>Find high-quality services at every price point. No hourly rates, just project-based pricing.</p>
+            </li>
+            <li>
+              <h6><i class="far fa-check-circle"></i>
+                Quality work done quickly
+              </h6>
+              <p>Find the right freelancer to begin working on your project within minutes.</p>
+
+            </li>
+            <li>
+              <h6><i class="far fa-check-circle"></i>
+                Protected payments, every time
+              </h6>
+              <p>Always know what you'll pay upfront. Your payment isn't released until you approve the work.</p>
+
+            </li>
+            <li>
+              <h6><i class="far fa-check-circle"></i>
+                24/7 support
+              </h6>
+              <p>Questions? Our round-the-clock support team is available to help anytime, anywhere.</p>
+
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-md-6 selling-point--right">
+          <div class="video-modal">
+            <div class="picture-wrapper" data-toggle="modal" data-target="#myVideo">
+              <picture>
+                <img
+                  src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_700,dpr_1.0/v1/attachments/generic_asset/asset/089e3bb9352f90802ad07ad9f6a4a450-1599517407052/selling-proposition-still-1400-x1.png"
+                  alt="Video teaser image">
+              </picture>
+            </div>
+            <div class="modal fade" id="myVideo" tabindex="-1" role="dialog" aria-labelledby="myVideoModal"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <video width="720" autoplay muted controls poster preload="metadata">
+                      <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/vmvv3czyk2ifedefkau7"
+                        type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
 
     </div>
 
   </section>
 
-  <!-- PARTNERS -->
-  <section class="partners">
-
-  </section>
-
-  <!-- SERVICES -->
-  <section class="services">
-
-  </section>
-
-  <!-- SELLING POINT -->
-  <section class="selling-point">
-
-  </section>
-
   <!-- CATEGORIES -->
-  <section class="categories"></section>
+  <section class="categories">
+    <div class="categories__content">
+      <h2>Explore the marketplace</h2>
+      <ul class="categories-list">
+        <li><a href="#"><img
+              src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/graphics-design.d32a2f8.svg"
+              alt="Graphics & Design" loading="lazy">Graphics & Design</a></li>
+        <li><a href="#"><img
+              src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/online-marketing.74e221b.svg"
+              alt="Digital Marketing" loading="lazy">Digital Marketing</a></li>
+        <li><a href="#"><img
+              src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/writing-translation.32ebe2e.svg"
+              alt="Writing &amp; Translation" loading="lazy">Writing & Translation</a></li>
+        <li><a href="#"><img
+              src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/writing-translation.32ebe2e.svg"
+              alt="Writing &amp; Translation" loading="lazy">Video & Animation</a></li>
+        <li><a href="#"><img
+              src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/music-audio.320af20.svg"
+              alt="Music &amp; Audio" loading="lazy">Music & Video</a></li>
+        <li><a href="#"><img
+              src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/programming.9362366.svg"
+              alt="Programming &amp; Tech" loading="lazy">Programming & Tech</a></li>
+        <li><a href="#"><img
+              src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/business.bbdf319.svg"
+              alt="Business" loading="lazy">Business</a></li>
+        <li><a href="#"><img
+              src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/lifestyle.745b575.svg"
+              alt="Lifestyle" loading="lazy">Lifestyle</a></li>
+        <li><a href="#"><img
+              src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/data.718910f.svg"
+              alt="Data" loading="lazy">Data</a></li>
+      </ul>
+    </div>
+  </section>
 
   <!-- BUSINESS -->
   <section class="business">
-
+    <div class="business__content">
+      <div class="row">
+        <div class="col-xs-12 col-md-6 business--left">
+          <small>
+            <i class="fiverr-business-logo">
+              <img src="./img/fiverrBusiness.svg" alt="fiverr logo">
+            </i>
+            <span class="logo-span">New</span>
+          </small>
+          <h2>
+            <span>
+              A business solution designed for
+              <i>teams</i>
+            </span>
+          </h2>
+          <p>
+            Upgrade to a curated experience packed with tools and benefits, dedicated to businesses
+          </p>
+          <ul>
+            <li><span><i class="far fa-check-circle"></i>Connect to freelancers with proven business experience</span>
+            </li>
+            <li><span><i class="far fa-check-circle"></i>Get matched with the perfect talent by a customer success
+                manager</span></li>
+            <li><span><i class="far fa-check-circle"></i>Manage teamwork and boost productivity with one powerful
+                workspace</span></li>
+          </ul>
+          <button class="btn--green">Explore Fiverr Business</button>
+        </div>
+        <div class="col-xs-12 col-md-6 business--right">
+          <picture>
+            <img src="./img/business-desktop.png" alt="">
+          </picture>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- TESTIMONIALS -->
@@ -237,6 +488,36 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+
+  <!-- OWL CAROUSEL -->
+  <script src="./js/owl.carousel.min.js">
+  </script>
+  <script>
+    $('.services__carousel').owlCarousel({
+      loop: true,
+      margin: 15,
+      nav: true,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1,
+          margin: 5
+        },
+        600: {
+          items: 2,
+          margin: 5
+        },
+        1060: {
+          items: 3,
+          margin: 5
+        },
+        1450: {
+          items: 5,
+          margin: 15
+        }
+      }
+    });
+  </script>
 
   <!-- MAIN JS -->
   <script src="./js/main.js"></script>
